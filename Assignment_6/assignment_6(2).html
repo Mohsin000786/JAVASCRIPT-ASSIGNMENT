@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6(2)</title>
+</head>
+<body>
+    <h1>Assignment 6(2)</h1>
+    <p>
+        Write a function named calculateDogAge that:
+        <ul>
+            <li>
+                takes 1 argument: your puppy's age.
+            </li>
+            <li>
+                calculates your dog's age based on the conversion rate of 1 human
+                year to 7 dog years.
+            </li>
+            <li>
+                outputs the result to the screen like so: "Your doggie is NN years old in
+dog years!"
+            </li>
+        </ul>
+    </p>
+    <script>
+        function calculateDogAge(humanYear){
+            let dogyears = humanYear * 7;
+            console.log(`"Your doggie is ${dogyears} years old in ${humanYear}!"`)
+        }
+        calculateDogAge(5)
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6(5)</title>
+</head>
+
+<body>
+    <h1>Assignment 6(5)</h1>
+    <p>
+        It's hot out! Let's make a converter based on the steps here.
+    <ul>
+        <li>
+            Store a celsius temperature into a variable.
+        </li>
+        <li>
+            Convert it to fahrenheit and output "NN°C is NN°F".
+        </li>
+    </ul>
+    </p>
+    <p>
+        Create a function called fahrenheitToCelsius:
+    <ul>
+        <li>
+            Now store a fahrenheit temperature into a variable
+        </li>
+        <li>
+            Convert it to celsius and output "NN°F is NN°C."
+        </li>
+    </ul>
+    </p>
+    <script>
+        function celsiusToFahrenheit(celsius) {
+            var celsiusInF = (celsius * 9) / 5 + 32;
+            console.log(celsius + '°C is ' + celsiusInF + '°F');
+        }
+
+        function fahrenheitToCelsius(fahrenheit) {
+            var fahrenheitInC = ((fahrenheit - 32) * 5) / 9;
+            console.log(fahrenheit + '°F is ' + fahrenheitInC + '°C');
+        }
+
+        celsiusToFahrenheit(200);
+
+        fahrenheitToCelsius(90)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6(4)</title>
+</head>
+
+<body>
+    <h1>Assignment 6(4)</h1>
+    <p>
+        Create 2 functions that calculate properties of a circle, using the definitions here.
+    <ul>
+        <li>
+            Pass the radius to the function.
+        </li>
+        <li>
+            Calculate the circumference based on the radius, and output "The circumference is NN".
+        </li>
+    </ul>
+    </p>
+    <script>
+        function calcGeometry(radius) {
+            var circumference = Math.PI * 2 * radius;
+            console.log("The circumference is " + circumference);
+            var area = Math.PI * radius * radius;
+            console.log("The area is " + area);
+        }
+        calcGeometry(5)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <h1 style="align-items: center;">Assignment 2 (2)</h1>
+    <script>
+        function CSV_to_2D_Array(data, delimiter = ',') {
+
+            /* This variable will collect all the titles
+               from the data variable
+               ["Name", "Roll Number"] */
+
+            const titles = data.slice(0, data
+                .indexOf('\n')).split(delimiter);
+
+            /* This variable will store the values
+               from the data
+               [ 'Rohan,01', 'Aryan,02' ] */
+            const titleValues = data.slice(data
+                .indexOf('\n') + 1).split('\n');
+
+            /* Map function will itterate over all
+               values of title values array and
+               append each object at the end of
+               the array */
+            const ansArray = titleValues.map(function (v) {
+
+                /* Values variable will store individual
+                   title values        
+                   [ 'Rohan', '01' ] */
+                const values = v.split(delimiter);
+
+                /* storeKeyValue variable will store
+                   object containing each title
+                   with their respective values i.e
+                   { Name: 'Rohan', 'Roll Number': '01' } */
+                const storeKeyValue = titles.reduce(
+                    function (obj, title, index) {
+                        obj[title] = values[index];
+                        return obj;
+                    }, {});
+
+                return storeKeyValue;
+            });
+
+            return ansArray;
+        };
+
+        var inputString1 = "1,2,3,4,5,6\n7,8,1,2,3\n4,5,6,7,8,9";
+        console.log(CSV_to_2D_Array(inputString1));
+    </script>
+</body>
+
+</html>

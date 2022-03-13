@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: fit-content;
+    margin: 4rem auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group>label{
+    font-size: 1rem;
+    color: #000;
+    flex: 40%;
+    width: 200px;
+}
+
+.form-group>input{
+    width: 600px;
+    padding: 5px;
+    flex: 60%;
+}
+
+.formbtn>button{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #000;
+    background-color: deepskyblue;
+    width: 200px;
+}
+
+#f_error{
+    display:inline-block;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#l_error{
+    display:inline-block;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#e_error{
+    display:inline-block;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#u_error{
+    display:inline-block;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#p_error{
+    display:inline-block;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#c_error{
+    display:inline-block;
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    margin-left: 1rem;
+}

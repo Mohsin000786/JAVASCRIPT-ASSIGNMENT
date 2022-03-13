@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5(5)</title>
+</head>
+<body>
+    <h1>Assignment 5(5)</h1>
+    <p>star pattern</p>
+    <script>
+        str = "";
+        str1 = "";
+        str2 = "";
+        for(let i = 5 ; i>=1 ; i--){
+            for(let j = 0; j < i; j++){
+                str += "*";
+            }
+            str += "\n";
+        }
+        console.log(str);
+        console.log("\n");
+        
+        for(let i =0; i<5; i++){
+            for(let j = 0; j < 5 ; j++) {
+                if(i+j >= 4){
+                    str1 += "*";
+                }else{
+                    str1 += " ";
+                }
+            }
+            str1 += "\n";
+        }
+
+        console.log(str1)
+
+        console.log("\n");
+        
+        for(let i =0; i<5; i++){
+            for(let j = 0; j < 5 ; j++) {
+                if(i+j >= 4){
+                    str2 += "* ";
+                }else{
+                    str2 += " ";
+                }
+            }
+            str2 += "\n";
+        }
+
+        console.log(str2)
+    </script>
+    
+</body>
+</html>
